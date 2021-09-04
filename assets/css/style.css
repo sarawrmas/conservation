@@ -14,7 +14,7 @@
 }
 
 body {
-  color: var(--blue);
+  color: var(--dark-brown);
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -52,14 +52,14 @@ header nav ul li a {
 }
 
 footer {
-  background-color: var(--light-green);
+  background-color: var(--light-brown);
   width: 100%;
   padding: 30px;
 }
 
 footer h2 {
   display: inline;
-  color: var(--dark-green);
+  color: var(--dark-brown);
   font-size: 30px;
   margin: 0;
 }
@@ -67,4 +67,59 @@ footer h2 {
 footer div {
   float: right;
   text-align: right;
+}
+
+section {
+  padding: 60px;
+}
+
+.hero {
+  background-image: url('../images/bulb.jpg');
+  height: 650px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-form {
+  background-color: var(--light-green);
+  padding: 20px;
+  width: 500px;
+  color: var(--dark-green);
+  border: 3px solid var(--dark-green);
+  position: absolute;
+  top: 120px;
+  right: 100px;
+}
+
+.hero-form h3 {
+  font-size: 30px;
+  margin: 0;
+  text-align: center;
+}
+
+.hero-form p {
+  margin: 5px 0 15px 0;
+}
+
+.hero-form label {
+  margin: 0 5px;
+}
+
+.form-input {
+  border: 1px solid var(--dark-green);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--dark-green);
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.hero-form button {
+  color: var(--light-green);
+  background-color: var(--dark-green);
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
 }
