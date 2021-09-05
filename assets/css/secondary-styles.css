@@ -1,0 +1,38 @@
+.hero {
+  background-position: top;
+  height: auto;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.page-title {
+  display: inline-block;
+  padding: 0 80px 15px 80px;
+  font-size: 50px;
+}
+
+.principles figure {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.principles figcaption {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.principles figcaption a {
+  text-decoration: none;
+  color: var(--dark-green);
+}
+
+.principles figcaption a:hover {
+  text-decoration: underline;
+}
+
+.principles p {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+}
