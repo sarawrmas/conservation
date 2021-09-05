@@ -78,8 +78,13 @@ footer h2 {
 }
 
 footer div {
+  line-height: 1.5;
   float: right;
   text-align: right;
+}
+
+footer a {
+  color: var(--dark-brown);
 }
 
 /* Hero/Jumbotron */
