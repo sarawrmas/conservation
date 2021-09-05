@@ -23,4 +23,5 @@ GitHub: https://github.com/sarawrmas
 Email: sara.m.adamski@gmail.com
 
 ## Credits
-2021 by Sara Adamski
+Sara Adamski  
+Icons from flaticon.com

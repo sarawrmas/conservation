@@ -89,7 +89,7 @@ section {
   border: 3px solid var(--dark-green);
   position: absolute;
   top: 120px;
-  right: 100px;
+  right: 80px;
 }
 
 .hero-form h3 {
@@ -122,4 +122,64 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro h2 {
+  font-size: 50px;
+  color: var(--dark-green);
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid var(--light-green);
+  display: inline-block;
+}
+
+.intro p {
+  /* adds spacing between lines */
+  line-height: 1.7;
+  color: var(--dark-green);
+  width: 80%;
+  font-size: 20px;
+  /* Centers content with width less than 100% */
+  margin: 0 auto;
+}
+
+.intro p a {
+  text-decoration: none;
+  color: var(--dark-green);
+  font-weight: bold;
+}
+
+.intro p a:hover {
+  font-style: italic;
+}
+
+.steps {
+  background: var(--light-green);
+}
+
+.steps h2 {
+  border-bottom: 3px solid var(--dark-green);
+}
+
+.steps h3 {
+  color: var(--dark-green);
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.steps div {
+  margin-bottom: 80px;
+}
+
+.steps img {
+  width: 15%;
+  margin: 10px 0;
+}
+
+.steps span {
+  font-size: 38px;
 }
