@@ -33,6 +33,9 @@ section {
 header {
   padding: 20px 35px;
   background-color: var(--dark-green);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
@@ -40,7 +43,6 @@ header h1 {
   font-size: 36px;
   color: var(--light-green);
   margin: 0;
-  display: inline;
 }
 
 header a {
@@ -49,18 +51,22 @@ header a {
 }
 
 header nav {
-  float: right;
   margin: 7px 0;
 }
 
-header nav ul li {
-  display: inline;
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* align items vertically when direction is row */
+  align-items: center;
+  list-style: none;
 }
 
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
-  font-size: 22px;
+  font-size: 1.55vw;
 }
 
 /* Footer */
@@ -68,10 +74,12 @@ footer {
   background-color: var(--light-brown);
   width: 100%;
   padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 footer h2 {
-  display: inline;
   color: var(--dark-brown);
   font-size: 30px;
   margin: 0;
@@ -79,7 +87,6 @@ footer h2 {
 
 footer div {
   line-height: 1.5;
-  float: right;
   text-align: right;
 }
 
@@ -90,22 +97,30 @@ footer a {
 /* Hero/Jumbotron */
 .hero {
   background-image: url('../images/bulb.jpg');
-  height: 650px;
   background-size: cover;
   background-position: center;
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-cta {
+  width: 35%;
+  text-align: center;
+  margin: 3.5%;
+  color: white;
+  font-size: 45px;
+  font-style: italic;
 }
 
 /* Sign up form */
 .hero-form {
   background-color: var(--light-green);
   padding: 20px;
-  width: 500px;
   color: var(--dark-green);
   border: 3px solid var(--dark-green);
-  position: absolute;
-  top: 120px;
-  right: 80px;
+  /* width: 30%; */
+  margin: 3.5%;
 }
 
 .hero-form h3 {
@@ -154,7 +169,7 @@ footer a {
   display: inline-block;
 }
 
-.intro p, .intro figure {
+.intro p {
   /* adds spacing between lines */
   line-height: 1.7;
   color: var(--dark-green);
