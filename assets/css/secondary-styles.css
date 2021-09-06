@@ -34,6 +34,23 @@
 
 .principles p {
   width: 70%;
-  margin: 0 auto;
-  text-align: justify;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.principles h3 {
+  color: var(--dark-green);
+  font-size: 45px;
+  margin-top: 10px;
+}
+
+.principles div {
+  margin-bottom: 80px;
+  width: 60%;
+  margin: 30px auto;
+}
+
+.principles img {
+  width: 300px;
+  margin: 10px 0;
 }
