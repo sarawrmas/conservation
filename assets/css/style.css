@@ -22,14 +22,6 @@ section {
 }
 
 /* Utility classes */
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
-
 .flex-row {
   display: flex;
 }
@@ -69,7 +61,7 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -107,6 +99,7 @@ footer a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .hero-cta {
@@ -116,6 +109,7 @@ footer a {
   color: white;
   font-size: 45px;
   font-style: italic;
+  line-height: 1.2;
 }
 
 /* Sign up form */
@@ -161,17 +155,10 @@ footer a {
 }
 
 /* Who We Are */
-/* .intro {
-  text-align: center;
-} */
-
 .intro h2 {
   font-size: 50px;
   color: var(--dark-green);
-  /* margin-bottom: 35px; */
-  /* padding: 0 100px 20px 100px; */
   border-bottom: 3px solid var(--light-brown);
-  /* display: inline-block; */
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -186,7 +173,6 @@ footer a {
   font-size: 20px;
   /* Centers content with width less than 100% */
   margin: 0 auto;
-  /* text-align: center; */
 }
 
 .intro p a {
@@ -253,11 +239,10 @@ footer a {
 
 /* Meet the Team */
 .member {
-  width: 900px;
-  margin: 0 auto 30px auto;
   background: var(--dark-green);
   color: var(--light-green);
-  /* provides block formatting context to article element */
+  width: 900px;
+  margin: 0 auto 30px auto;
   overflow: auto;
 }
 
@@ -267,27 +252,28 @@ footer a {
 }
 
 .member-bio {
-  padding: 35px;
+  padding: 25px;
   float: left;
   width: 65%;
   color: var(--dark-brown);
+  line-height: 1.3;
 }
 
 .member-bio h3 {
-  font-size: 30px;
-  margin-bottom: 8px;
+  font-size: 28px;
+  text-align: center;
 }
 
 .member-bio h4 {
   font-weight: lighter;
-  font-size: 26px;
-  margin-bottom: 25px;
+  font-size: 22px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .member-bio p {
   color: var(--light-green);
   font-size: 17px;
-  line-height: 1.3;
 }
 
 /* Contact */
@@ -356,4 +342,128 @@ footer a {
   padding: 15px 0;
   font-size: 16px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 980px) {
+  .members {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .member {
+    margin: 20px;
+    flex: 1;
+  }
+
+  .member img {
+    width: 100%;
+    float: none;
+  }
+
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta, .hero-form {
+    width: 100%;
+  }
+  
+  .hero-cta {
+    text-align: center;
+  }
+  
+  .member {
+    flex: 0 70%;
+  }
+
+  .member-bio {
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  
+  .contact-info iframe{
+    flex: 1 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;  
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .intro h2 {
+    width: 95%;
+  }
+
+  .member {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
