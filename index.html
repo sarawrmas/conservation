@@ -46,10 +46,14 @@
         <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
         <p>
           Would you like to receive our monthly newsletter?
-          <input type="radio" name="news-confirm" id="news-yes" />
-          <label for="news-yes">Yes</label>
-          <input type="radio" name="news-confirm" id="news-no" />
-          <laber for="news-no">No</laber>
+          <span class="radio-wrapper">
+            <input type="radio" name="news-confirm" id="news-yes" />
+            <label for="news-yes">Yes</label>
+          </span>
+          <span class="radio-wrapper">
+            <input type="radio" name="news-confirm" id="news-no" />
+            <label for="news-no">No</label>
+          </span>
         </p>
         <button type="submit">
           Join
