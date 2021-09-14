@@ -4,6 +4,7 @@
 * [Deployed](#deployed)
 * [Technologies](#technologies)
 * [Description](#description)
+* [Preview](#preview)
 * [Questions](#questions)
 * [Credits](#credits)
 
@@ -17,6 +18,10 @@ Access the website [here](https://sarawrmas.github.io/conservation/)
 
 ## Description
 Welcome to the landing page for Central Texas Conservation. We are an organization located in Temple, TX with the goal of preserving nature and all its inhabitants. Our website contains all of the relevant information about who we are, what we do, how to contact us, and how to get involved. We have also attached a page for viewers to learn about Leave No Trace guidelines, because a knowledgable outdoor enthusiast is the gold standard for keeping our forests clean and protected.
+
+## Preview
+<!-- ![A preview gif of the application](./assets/images/preview.gif) -->
+<img src="./assets/images/preview.gif" alt="A gif preview of the application" width="500px">
 
 ## Questions
 Have questions about this project?  
